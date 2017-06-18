@@ -1,0 +1,178 @@
+/* Sticky Footer */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+
+    font-size: 13px;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+/* Header */
+.navbar-fixed {
+    opacity: 0.98;
+}
+
+#navbar-logo {
+    height: 48px;
+    margin-top: 4px;
+}
+
+@media only screen and (min-width: 601px) {
+    #navbar-logo {
+        height: 50px;
+        margin-top: 7px;
+    }
+
+    nav img {
+        height: 50px;
+        margin-left: 10px;
+    }
+}
+
+
+/* Body */
+.parallax video {
+    min-width: 100%;
+}
+
+.parallax-container h1 {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.parallax-container h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.parallax-container .input-field {
+    opacity: 0.7;
+}
+
+.parallax-container .input-field input[type=text] {
+    margin-bottom: 10px;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+    color: black;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+    color: black;
+}
+
+.section {
+    padding-top: 2rem;
+}
+
+h5.mid-header {
+    font-size: 20px;
+}
+
+/* Feature Grid - Table */
+
+.modal {
+    min-width: 340px;
+    width: 30%;
+}
+
+#body-content #product-grid .row {
+    margin-bottom: 0;
+}
+
+#body-content #product-grid table td {
+    padding-top: 15px;
+    vertical-align: top;
+}
+
+#body-content #product-grid table tr td:first-child {
+    width: 58px;
+}
+
+#body-content #product-grid div .material-icons {
+    font-size: 36px;
+}
+
+#body-content #product-grid div h5, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#body-content #product-grid div p {
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: black;
+}
+
+/* Page-Footer */
+footer {
+    font-size: 13px;
+}
+
+footer.page-footer {
+    margin-top: 0;
+}
+
+footer .material-icons {
+    margin-right: 5px;
+}
+
+
+/* Corporate design colors */
+.primary-color {
+    background-color: #1D2747 !important;
+}
+
+.primary-color-dark {
+    background-color: #455A64 !important;
+}
+
+.gray-primary-color {
+    background-color: #54627F !important;
+}
+
+.primary-color-light {
+    background-color: #CFD8DC !important;
+}
+
+.accent-color {
+    background-color: #009688 !important;
+}
+
+.accent-color-text {
+    color: #FFE8A9 !important;
+}
+
+.primary-color-text {
+    color: #1e3054 !important;
+}
+
+.primary-color-dark-text {
+    color: #455A64 !important;
+}
+
+.primary-color-light-text {
+    color: #CFD8DC !important;
+}
+
+/* Dashboard */
+#dashboard-content .row {
+    margin-bottom: 0px;
+}
+
+#dashboard-content .card a {
+    color: black;
+}
+
+/* Cards in Dashboard */
+#dashboard-content .card i {
+    margin-right: 5px;
+}

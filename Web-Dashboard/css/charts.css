@@ -1,0 +1,122 @@
+.set-size {
+    font-size: 10em;
+}
+.pie-wrapper {
+    height: 10em;
+    width: 10em;
+    margin: 15px;
+    left: 50%;
+    margin-left: -5em;
+    position: relative;
+}
+.pie-wrapper:nth-child(3n+1) {
+    clear: both;
+}
+.pie-wrapper .pie {
+    height: 100%;
+    width: 100%;
+    clip: rect(0, 10em, 10em, 5em);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pie-wrapper .pie .half-circle {
+    height: 100%;
+    width: 100%;
+    border: 1em solid #607D8B;
+    border-radius: 50%;
+    clip: rect(0, 5em, 10em, 0);
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.pie-wrapper .label {
+    background: hsla(200, 18%, 46%, 0.1);
+    border-radius: 50%;
+    bottom: 0em;
+    color: #ecf0f1;
+    cursor: default;
+    display: block;
+    font-size: 3.5em;
+    left: 0em;
+    line-height: 2.5em;
+    position: absolute;
+    right: 0em;
+    text-align: center;
+    top: 0em;
+}
+.pie-wrapper .label .smaller {
+    opacity: 0.5;
+    font-size: 0.45em;
+    padding-bottom: 20px;
+    margin-left: -10px;
+    vertical-align: super;
+}
+.pie-wrapper .shadow {
+    height: 100%;
+    width: 100%;
+    border: 1em solid #607D8B;
+    border-radius: 50%;
+}
+
+
+#chart-main {
+    background-color: #000;
+}
+.ct-label {
+    color: rgba(0,0,0,0.4) !important;
+}
+.ct-grid{
+    stroke: rgba(0,0,0,0.2) !important;
+}
+
+.ct-series-a .ct-line {
+    opacity: 1;
+    stroke: #607D8B;
+    stroke-width: 5px;
+}
+
+.ct-series-a .ct-point {
+    stroke: #607D8B;
+    stroke-width: 20px;
+}
+
+.chart-label {
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    bottom: 0px;
+    color: rgba(0,0,0,0.5);
+    font-size: 12px;
+    display: none;
+}
+
+#chart-label-left {
+    left: 0px;
+}
+
+#chart-label-right {
+    right: 0px;
+}
+
+#indicator-container {
+    position: absolute;
+    background-color: #EFEFEF;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    width: 100px;
+    margin-left: -60px;
+    margin-top: 20px;
+    display: none;
+}
+
+.trustlevel-bin-label {
+    font-size: 10px;
+    opacity: 0.25;
+    font-weight: 900;
+    font-family: "Courier New", Courier, monospace;
+    cursor: default;
+}

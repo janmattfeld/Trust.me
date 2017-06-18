@@ -1,0 +1,162 @@
+{
+  "messages": [],
+  "name": "Stephan Schultz",
+  "accounts": [
+    {
+      "messages": [],
+      "iban": "DE85100100100003149194",
+      "bic": "PBNKDEFF",
+      "paymentName": "Maria Hassafds",
+      "bankName": "Postbank",
+      "accountNumber": "3149194",
+      "accountHolder": "Maria Hassafds",
+      "productType": "tagesgeld",
+      "currency": "EUR",
+      "amount": "500008.04",
+      "accountType": "PRIVATE",
+      "ownerType": "SINGLE",
+      "productDescription": "Postbank Tagesgeld",
+      "accountReference": {
+        "messages": [],
+        "iban": "DE53100100100005611145",
+        "bic": "PBNKDEFF",
+        "paymentName": "Maria Hassafds",
+        "bankName": "Postbank",
+        "accountNumber": "5611145",
+        "accountHolder": "Maria Hassafds",
+        "links": []
+      },
+      "creditLimit": null,
+      "futureSales": null,
+      "amountAvailable": null,
+      "currentlyNotAvailableAmount": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/tagesgeld/DE85100100100003149194"
+        },
+        {
+          "rel": "transactions",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/tagesgeld/DE85100100100003149194/transactions"
+        },
+        {
+          "rel": "overnightmoneytransfer",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/overnightmoneytransfer"
+        }
+      ]
+    },
+    {
+      "messages": [],
+      "iban": "DE53100100100005611145",
+      "bic": "PBNKDEFF",
+      "paymentName": "Stephan Schultz",
+      "bankName": "Postbank",
+      "accountNumber": "5611145",
+      "accountHolder": "Stephan Schultz",
+      "productType": "giro",
+      "currency": "EUR",
+      "amount": "13025.39",
+      "accountType": "PRIVATE",
+      "ownerType": "SINGLE",
+      "productDescription": "Postbank Giro start direkt",
+      "accountReference": null,
+      "creditLimit": "0.00",
+      "futureSales": null,
+      "amountAvailable": null,
+      "currentlyNotAvailableAmount": null,
+      "links": [
+        {
+          "rel": "self",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/giro/DE53100100100005611145"
+        },
+        {
+          "rel": "transactions",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/giro/DE53100100100005611145/transactions"
+        },
+        {
+          "rel": "anticipations",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/giro/DE53100100100005611145/anticipations"
+        },
+        {
+          "rel": "template",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/templates"
+        },
+        {
+          "rel": "orderlimits",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/giro/DE53100100100005611145/limits"
+        },
+        {
+          "rel": "credittransfer",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/credittransfer"
+        },
+        {
+          "rel": "mobilecharging",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/mobilecharging"
+        },
+        {
+          "rel": "mobilecharging/providers",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/mobilecharging/providers"
+        },
+        {
+          "rel": "standingorder",
+          "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/standingorder"
+        }
+      ]
+    }
+  ],
+  "creditcards": [],
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/?refreshCache=false"
+    },
+    {
+      "rel": "authorizations",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/authorizations"
+    },
+    {
+      "rel": "authorization_devices",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/authorizationdevices"
+    },
+    {
+      "rel": "permissions",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/permissions"
+    },
+    {
+      "rel": "paymentaccountsgiro",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/paymentaccounts/giro?refreshCache=false"
+    },
+    {
+      "rel": "vouchers",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/vouchers"
+    },
+    {
+      "rel": "messagebox_accountstatements",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/messagebox/accountstatements"
+    },
+    {
+      "rel": "create_event_trigger",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/eventtrigger"
+    },
+    {
+      "rel": "paymentaccountsspar",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/paymentaccounts/spar?refreshCache=false"
+    },
+    {
+      "rel": "paymentaccountstagesgeld",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/paymentaccounts/tagesgeld?refreshCache=false"
+    },
+    {
+      "rel": "simple_creditcard",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/creditcards/simple/"
+    },
+    {
+      "rel": "announcements",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/announcements"
+    },
+    {
+      "rel": "vzi_suggestion",
+      "href": "https://hackathon.postbank.de:443/bank-api/gold/lsw/vzi/auth/vzi"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+application: postbankserver
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: true
+libraries:
+- name: webapp2
+  version: latest
+- name: ssl
+  version: latest
+
+handlers:
+- url: /transfer
+  script: main.app
+
+- url: /reference
+  script: main.app
+
+- url: /reference_image.jpg
+  script: main.app
+
+- url: /verify
+  script: main.app
+
+- url: /verify_image.jpg
+  script: main.app
+
+- url: /test
+  script: main.app
+
+- url: /(.+)
+  static_files: dashboard/\1
+  upload: dashboard/(.*)
+
+- url: /
+  static_files: dashboard/index.html
+  upload: dashboard/index.html
+
+- url: /.*
+  script: main.app

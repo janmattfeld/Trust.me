@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Trust.me | Seamless User ID Provider</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materializecss/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link href="css/chartistcss/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/charts.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link rel="icon" href="images/open_lock.png">
+</head>
+<body>
+
+<header>
+    <div class="navbar-fixed">
+        <nav class="primary-color" role="navigation">
+            <div class="nav-wrapper container">
+                <a class="brand-logo" href="#!"><i class="material-icons">lock_open</i>Trust.me</a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse right"><i
+                        class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger valign-wrapper" href="#signout-modal">Stephan Schultz
+                        <img class="circle" src="images/steppschuh_profil.png" alt="Stephan Schultz"></a>
+                    </li>
+                </ul>
+
+                <ul id="nav-mobile" class="right side-nav">
+                    <li class="active valign-wrapper"><a class="modal-trigger" href="#signout-modal">Sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div class="container">
+
+        <div class="section">
+
+            <div class="row">
+
+                <!-- Stats -->
+                <div class="col s12 m12 l6">
+                    <div id="stats-container" class="card" style="height:240px;">
+                        <div class="card-content">
+                            <span class="card-title truncate">Account Information</span>
+                            <table id="account" class="highlight">
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Graph -->
+                <div class="col s12 m12 l6">
+                    <div id="graph-container" class="card" style="height:240px;">
+                        <div class="card-content">
+                            <span class="card-title truncate">Balance History</span>
+                          <div id="my-chart"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bins -->
+                <div class="col s12">
+                    <div id="bin-container" class="card">
+                        <div class="card-content">
+                            <span class="card-title truncate">Transactions<i class="material-icons right" onclick="refreshTransactions()">refresh</i><i class="material-icons right" onclick="refreshTransactions(10)">more_vert</i></span>
+                            <div id="cards-container" style="height:290px; margin-top: 5px;">
+                              <table id="transactions" class="responsive-table">
+                                 <thead>
+                                   <tr>
+                                   <th data-field="name">Date</th>
+                                       <th data-field="id">Amount</th>
+                                       <th data-field="id">Purpose</th>
+                                       <th data-field="price">Name</th>
+                                   </tr>
+                                 </thead>
+
+                                 <tbody>
+
+                                 </tbody>
+                               </table>
+                            </div>
+                            <ul class="pagination">
+                             <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                             <li class="active primary-color"><a href="#!">1</a></li>
+                             <li class="waves-effect"><a href="#!">2</a></li>
+                             <li class="waves-effect"><a href="#!">3</a></li>
+                             <li class="waves-effect"><a href="#!">4</a></li>
+                             <li class="waves-effect"><a href="#!">5</a></li>
+                             <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+</main>
+
+<footer class="page-footer primary-color">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5 class="white-text">Trust.me</h5>
+                <p class="grey-text text-lighten-4">
+                    Trust.me is an unique ID Provider. Instead of using many different accounts and passwords for
+                    several services,
+                    simply identify yourself through your mobile phone and other wearables.
+                    Trust.me allows companies to enable services based on easch user's individual calculated trust
+                    Level.
+                </p>
+            </div>
+            <div class="col s12 l3">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="accent-color-text" href="dashboard.html">Dashboard</a></li>
+                    <li><a class="accent-color-text" href="https://github.com/WGierke/PostBankBerlin2016">Git</a></li>
+                    <li><a class="accent-color-text" href="http://combined-transport.eu/">Slack</a></li>
+                </ul>
+            </div>
+            <div id="footer-contact" class="col s12 m12 l3">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                    <li class="white-text">Trust.me</li>
+                    <li class="white-text">Friedrich-Ebert-Allee 114-126</li>
+                    <li class="white-text">53113 Bonn, Germany</li>
+                    <li class="white-text">+49 228 5500 5500</li>
+                    <li class="valign-wrapper">
+                        <i class="material-icons accent-color-text valign tiny">email</i>
+                        <a class="accent-color-text" href="mailto:kontakt@steppschuh.net">E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Trust.me | by
+            <a class="accent-color-text" href="mailto:jan.mattfeld@student.hpi.de">Jan</a>,
+            <a class="accent-color-text" href="mailto:robert.stark@student.hpi.de">Robert</a>,
+            <a class="accent-color-text" href="mailto:kontakt@steppschuh.net">Stephan</a> and
+            <a class="accent-color-text" href="mailto:robert@student.hpi.de">Willi</a>.
+        </div>
+    </div>
+</footer>
+
+<!-- Login Modal -->
+<div id="signout-modal" class="modal">
+    <div class="modal-content">
+        <h4 class="primary-color-text">Sign out</h4>
+        <div class="row">
+            <div class="modal-footer col s12">
+                <a href="#!"
+                   class=" modal-action modal-close waves-effect waves-green primary-color btn left">Cancel</a>
+                <a href="index.html" class=" modal-action modal-close waves-effect waves-green primary-color btn">
+                    Sign out!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materializejs/materialize.js"></script>
+<script src="js/init.js"></script>
+
+
+<script>
+    var channelToken = "AHRlWrpF7xMZNNl-pcg3FKOoy_pk5ZOS1nlYv90ZQgmXwxMzOF0d4yL0r4ObkgMdNs38HCEcAOG1J7_6FPQ8vZqvlnAWRAVIHp3qmWxtgSBPzVXqGH2kH4xdzGOacJ-YXHBgqLNJsszO";
+    var channelKey = "6202012634972160";
+</script>
+
+<script src="js/nosleep.js" defer></script>
+<script src="js/chartist.js" defer></script>
+<script src="js/postbank.js" defer></script>
+
+</body>
+</html>

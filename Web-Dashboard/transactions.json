@@ -1,0 +1,86 @@
+{
+    "messages": [],
+    "links": [
+        {
+            "rel": "self",
+            "href": "https://hackathon.postbank.de:443/bank-api/gold/postbankid/accounts/giro/DE85100100100003149194/transactions?size=100&page=1"
+        }
+    ],
+    "content": [
+        {
+            "messages": [],
+            "transactionId": "00505600AFCD1EE6B3D340681A301AEB",
+            "amount": "-79.50",
+            "balance": "13025.39",
+            "currency": "EUR",
+            "purpose": ["Theaterabo"],
+            "bookingDate": "2017-03-12",
+            "valutaDate": 1483138800000,
+            "reference": {
+                "messages": [],
+                "iban": null,
+                "bic": null,
+                "paymentName": "",
+                "bankName": "Postbank",
+                "accountNumber": "",
+                "accountHolder": "Kleine Schaubühne",
+                "links": []
+            },
+            "transactionType": "KiSt",
+            "transactionDetail": null,
+            "links": []
+        },
+        {
+            "messages": [],
+            "transactionId": "00505600AFCD1EE6B3D340681A301AEB",
+            "amount": "-9.50",
+            "balance": "13019.39",
+            "currency": "EUR",
+            "purpose": ["Mittagessen"],
+            "bookingDate": "2017-03-14",
+            "valutaDate": 1483138800000,
+            "reference": {
+                "messages": [],
+                "iban": null,
+                "bic": null,
+                "paymentName": "",
+                "bankName": "Postbank",
+                "accountNumber": "",
+                "accountHolder": "Robert Stark",
+                "links": []
+            },
+            "transactionType": "SolZ",
+            "transactionDetail": null,
+            "links": []
+        },
+        {
+            "messages": [],
+            "transactionId": "00505600AFCD1EE6B3D340681A301AEB",
+            "amount": "-150.00",
+            "balance": "12980.39",
+            "currency": "EUR",
+            "purpose": ["Übertrag Tagesgeld"],
+            "bookingDate": "2017-03-16",
+            "valutaDate": 1483138800000,
+            "reference": {
+                "messages": [],
+                "iban": null,
+                "bic": null,
+                "paymentName": "",
+                "bankName": "Postbank",
+                "accountNumber": "",
+                "accountHolder": "Stephan Schultz",
+                "links": []
+            },
+            "transactionType": "KapSt",
+            "transactionDetail": null,
+            "links": []
+        }
+    ],
+    "page": {
+        "size": 100,
+        "totalElements": 6,
+        "totalPages": 1,
+        "number": 1
+    }
+}

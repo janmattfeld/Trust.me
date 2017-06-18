@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+    <title>Trust.me | Seamless User ID Provider</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materializecss/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link href="css/chartistcss/chartist.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/charts.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <link rel="icon" href="images/open_lock.png">
+</head>
+<body>
+
+<header>
+    <div class="navbar-fixed">
+        <nav class="primary-color" role="navigation">
+            <div class="nav-wrapper container">
+                <a class="brand-logo" href="#!"><i class="material-icons">lock_open</i>Trust.me</a>
+                <a href="#" data-activates="nav-mobile" class="button-collapse right"><i
+                        class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="modal-trigger valign-wrapper" href="#signout-modal">Stephan Schultz
+                        <img class="circle" src="images/steppschuh_profil.png" alt="Stephan Schultz"></a>
+                    </li>
+                </ul>
+
+                <ul id="nav-mobile" class="right side-nav">
+                    <li class="active valign-wrapper"><a class="modal-trigger" href="#signout-modal">Sign out</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <div id="dashboard-content" class="container section">
+        <div class="row">
+
+            <div class="col s12 m12 l4">
+                <div class="row">
+                    <div class="col s12">
+
+                        <div class="card" style="height: 622.5px;">
+                            <div class="card-content">
+                                <table>
+                                    <!-- Stats -->
+                                    <thead>
+                                    <tr>
+                                        <th><span class="card-title truncate primary-color-text">Stats</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>Total Updates</td>
+                                        <td>133</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Last update</td>
+                                        <td>12:31 - 02.10.16</td>
+                                    </tr>
+                                    </tbody>
+
+                                    <!-- Devices -->
+                                    <thead>
+                                    <tr>
+                                        <th><span class="card-title truncate primary-color-text">Devices</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="valign-wrapper"><i
+                                                class="material-icons primary-color-text">phone_android</i>- Nexus 5X
+                                        </td>
+                                        <td class="green-text">Activated</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="valign-wrapper"><i
+                                                class="material-icons primary-color-text">watch</i>-
+                                            Motorola Moto 360
+                                        </td>
+                                        <td class="red-text">Deactivated</td>
+                                    </tr>
+                                    </tbody>
+
+                                    <!-- Devices -->
+                                    <thead>
+                                    <tr>
+                                        <th><span class="card-title truncate primary-color-text">Services</span></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td><a href="postbank.html">Postbank Banking</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#!">SatochiPay</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#!">Deutsche Bahn</a></td>
+                                    </tr>
+                                    </tbody>
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Total trust level -->
+            <div class="col s12 m12 l8">
+
+                <div class="row">
+                    <div class="col s5">
+                        <div id="total-container" class="card small">
+                            <div class="card-content">
+                                <span class="card-title truncate">Trust Level</span>
+                                <div class="pie-wrapper">
+										<span class="label primary-color-text">
+											<span class="pie-value">0</span>
+											<span class="smaller">%</span>
+										</span>
+                                    <div class="pie animated-fast">
+                                        <div class="left-side half-circle animated-fast"></div>
+                                        <div class="right-side half-circle animated-fast"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Graph -->
+                    <div class="col s7">
+                        <div id="graph-container" class="card small">
+                            <div class="card-content">
+                                <span class="card-title truncate">Day</span>
+                                <div id="chart-label-left" class="chart-label">
+                                </div>
+                                <div id="chart-label-right" class="chart-label">
+                                </div>
+                                <div id="chart-container" style="height:195px;">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bins -->
+                    <div class="col s12">
+                        <div id="bin-container" class="card small">
+                            <div class="card-content">
+                                <span class="card-title truncate">Past Days</span>
+                                <div id="cards-container" style="height:200px; margin-top: 5px;">
+                                    &nbsp;
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer class="page-footer primary-color">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 l6">
+                <h5 class="white-text">Trust.me</h5>
+                <p class="grey-text text-lighten-4">
+                    Trust.me is an unique ID Provider. Instead of using many different accounts and passwords for
+                    several services,
+                    simply identify yourself through your mobile phone and other wearables.
+                    Trust.me allows companies to enable services based on easch user's individual calculated trust
+                    Level.
+                </p>
+            </div>
+            <div class="col s12 l3">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="accent-color-text" href="dashboard.html">Dashboard</a></li>
+                    <li><a class="accent-color-text" href="https://github.com/WGierke/PostBankBerlin2016">Git</a></li>
+                    <li><a class="accent-color-text" href="http://combined-transport.eu/">Slack</a></li>
+                </ul>
+            </div>
+            <div id="footer-contact" class="col s12 m12 l3">
+                <h5 class="white-text">Contact</h5>
+                <ul>
+                    <li class="white-text">Trust.me</li>
+                    <li class="white-text">Friedrich-Ebert-Allee 114-126</li>
+                    <li class="white-text">53113 Bonn, Germany</li>
+                    <li class="white-text">+49 228 5500 5500</li>
+                    <li class="valign-wrapper">
+                        <i class="material-icons accent-color-text valign tiny">email</i>
+                        <a class="accent-color-text" href="mailto:kontakt@steppschuh.net">E-mail</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2016 Trust.me | by
+            <a class="accent-color-text" href="mailto:jan.mattfeld@student.hpi.de">Jan</a>,
+            <a class="accent-color-text" href="mailto:robert.stark@student.hpi.de">Robert</a>,
+            <a class="accent-color-text" href="mailto:kontakt@steppschuh.net">Stephan</a> and
+            <a class="accent-color-text" href="mailto:robert@student.hpi.de">Willi</a>.
+        </div>
+    </div>
+</footer>
+
+<!-- Login Modal -->
+<div id="signout-modal" class="modal">
+    <div class="modal-content">
+        <h4 class="primary-color-text">Sign out</h4>
+        <div class="row">
+            <div class="modal-footer col s12">
+                <a href="#!"
+                   class=" modal-action modal-close waves-effect waves-green primary-color btn left">Cancel</a>
+                <a href="index.html" class=" modal-action modal-close waves-effect waves-green primary-color btn">
+                    Sign out!</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--  Scripts-->
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/materializejs/materialize.js"></script>
+<script src="js/init.js"></script>
+
+<script>
+    var channelToken = getUrlParam("channelToken");
+    var channelKey = "6202012634972160";
+</script>
+
+<script src="js/channel/jsapi"></script>
+<script src="js/nosleep.js" defer></script>
+<script src="js/chartist.js" defer></script>
+<script src="js/api.js" defer></script>
+<script src="js/dashboard.js" defer></script>
+
+</body>
+</html>
